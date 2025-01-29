@@ -6,11 +6,11 @@ from threading import Lock
 import time
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "7987563641:AAEkQcErl3bFlpSy8ozDq7DcrZgp3SpF7yE"
-ADMIN_ID = 6348583777
+BOT_TOKEN = "SEU TOKEN AQUI"
+ADMIN_ID = 7975019665
 START_PY_PATH = "MHDDoS/start.py"
 
-bot = telebot.TeleBot(7987563641:AAEkQcErl3bFlpSy8ozDq7DcrZgp3SpF7yE)
+bot = telebot.TeleBot(BOT_TOKEN)
 db_lock = Lock()
 cooldowns = {}
 active_attacks = {}
@@ -57,7 +57,7 @@ def handle_start(message):
     markup = InlineKeyboardMarkup()
     button = InlineKeyboardButton(
         text="💻 SUPORTE - OFICIAL 💻",
-        url=f"tg://user?id={6348583777}"
+        url=f"tg://user?id={ADMIN_ID}"
 
     )
     markup.add(button)
@@ -75,11 +75,11 @@ def handle_start(message):
             """
 ```
 /ping <TYPE> <IP/HOST:PORT> <THREADS> <MS>```\n"""
-            "💡 *Ejemplo:*"
+            "💡 *Exemplo:*"
             """
 ```
 /ping UDP 143.92.125.230:10013 10 900```\n"""
-            "⚠️ *Atención:* Este bot fue creado para fines educacionales."
+            "⚠️ *Atenção:* Este bot foi criado apenas para fins educacionais."
         ),
         reply_markup=markup,
         parse_mode="Markdown",
