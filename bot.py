@@ -57,7 +57,7 @@ def handle_start(message):
     markup = InlineKeyboardMarkup()
     button = InlineKeyboardButton(
         text="💻 SUPORTE - OFICIAL 💻",
-        url=f"tg://user?id={ADMIN_ID}"
+        url=f"tg://user?id={6348583777}"
 
     )
     markup.add(button)
@@ -75,11 +75,11 @@ def handle_start(message):
             """
 ```
 /ping <TYPE> <IP/HOST:PORT> <THREADS> <MS>```\n"""
-            "💡 *Exemplo:*"
+            "💡 *Ejemplo:*"
             """
 ```
 /ping UDP 143.92.125.230:10013 10 900```\n"""
-            "⚠️ *Atenção:* Este bot foi criado apenas para fins educacionais."
+            "⚠️ *Atención:* Este bot fue creado para fines educacionales."
         ),
         reply_markup=markup,
         parse_mode="Markdown",
