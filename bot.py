@@ -6,11 +6,11 @@ from threading import Lock
 import time
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "7987563641:AAGSipVdlKmcv4uokh8hUA6rVEVKE8pY8pY"
+BOT_TOKEN = "7987563641:AAEkQcErl3bFlpSy8ozDq7DcrZgp3SpF7yE"
 ADMIN_ID = 6348583777
 START_PY_PATH = "MHDDoS/start.py"
 
-bot = telebot.TeleBot(7987563641:AAGSipVdlKmcv4uokh8hUA6rVEVKE8pY8pY)
+bot = telebot.TeleBot(7987563641:AAEkQcErl3bFlpSy8ozDq7DcrZgp3SpF7yE)
 db_lock = Lock()
 cooldowns = {}
 active_attacks = {}
